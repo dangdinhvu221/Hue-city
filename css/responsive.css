@@ -1,0 +1,59 @@
+/* ============================================
+   RESPONSIVE — mobile-first overrides
+   ============================================ */
+
+/* Base styles in other files already target mobile.
+   These breakpoints layer in more room for larger screens. */
+
+@media (min-width: 640px) {
+  .gallery {
+    columns: 2;
+  }
+
+  .video-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .journey-stop {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .journey-stop:nth-child(even) .journey-stop__media {
+    order: 2;
+  }
+
+  .gallery {
+    columns: 3;
+  }
+}
+
+@media (min-width: 1200px) {
+  .video-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Hide desktop-only chrome on touch/small screens */
+@media (max-width: 899px) {
+  .chapter-nav {
+    right: var(--space-xs);
+  }
+
+  .chapter-nav__label {
+    display: none;
+  }
+
+  .music-toggle {
+    left: var(--space-xs);
+    bottom: var(--space-xs);
+  }
+}
+
+@media (max-width: 480px) {
+  .letter {
+    padding: var(--space-lg) var(--space-sm);
+  }
+}

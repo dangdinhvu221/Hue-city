@@ -1,0 +1,88 @@
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  color: var(--color-text);
+  background: var(--color-bg);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: var(--lh-heading);
+  color: var(--color-text);
+}
+
+.eyebrow {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  letter-spacing: var(--ls-widest);
+  text-transform: uppercase;
+  color: var(--color-accent-secondary);
+}
+
+.display-hero {
+  font-size: var(--fs-hero);
+  line-height: var(--lh-tight);
+  letter-spacing: 0.01em;
+}
+
+.display-h1 {
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+}
+
+.display-h2 {
+  font-size: var(--fs-h2);
+}
+
+.display-h3 {
+  font-size: var(--fs-h3);
+  font-weight: 500;
+}
+
+.body-lg {
+  font-family: var(--font-body);
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-body);
+  color: var(--color-text);
+  font-weight: 300;
+}
+
+.body-text {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--color-text-muted);
+}
+
+.caption {
+  font-family: var(--font-body);
+  font-size: var(--fs-caption);
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+}
+
+.chapter-index {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: var(--fs-h3);
+  color: var(--color-accent-secondary);
+}
+
+.letter-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2vw, 1.5rem);
+  line-height: 1.9;
+  color: var(--color-text);
+}
+
+::selection {
+  background: var(--color-wine);
+  color: var(--color-ivory);
+}

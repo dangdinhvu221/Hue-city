@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Hue — A Chapter of Us</title>
+<meta name="description" content="An interactive love story about our journey through Hue." />
+<meta name="theme-color" content="#F4EFE7" />
+
+<meta property="og:title" content="Hue — A Chapter of Us" />
+<meta property="og:description" content="An interactive love story about our journey through Hue." />
+<meta property="og:type" content="website" />
+
+<link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/variables.css" />
+<link rel="stylesheet" href="css/typography.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/chapters.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<!-- Loading screen -->
+<div class="loader" id="loader" aria-hidden="true">
+  <span class="loader__mark">HUE</span>
+</div>
+
+<!-- Top progress bar -->
+<div class="progress-bar" aria-hidden="true">
+  <div class="progress-bar__fill"></div>
+</div>
+
+<!-- Chapter navigation -->
+<nav class="chapter-nav" id="chapter-nav" aria-label="Chapter navigation"></nav>
+
+<!-- Music toggle -->
+<button class="music-toggle" id="music-toggle" data-playing="false" aria-pressed="false" aria-label="Toggle background music">
+  <span class="music-toggle__bars"><span></span><span></span><span></span></span>
+  <span class="music-toggle__text">Music off</span>
+</button>
+<audio id="background-audio" loop preload="none"></audio>
+
+<main id="main-content">
+
+  <!-- CHAPTER 00 — THE INVITATION -->
+  <section class="chapter chapter--full" id="chapter-00">
+    <div class="container">
+      <p class="eyebrow invitation__reveal" id="invitation-eyebrow"></p>
+      <div class="invitation__line"></div>
+      <h1 class="display-hero invitation__title invitation__reveal" id="invitation-title"></h1>
+      <p class="body-lg invitation__subtitle invitation__reveal" id="invitation-subtitle"></p>
+      <p class="body-text invitation__subtitle invitation__reveal" id="invitation-intro" style="margin-bottom: var(--space-lg);"></p>
+      <button class="btn btn-primary invitation__reveal" id="invitation-cta"></button>
+    </div>
+  </section>
+
+  <!-- CHAPTER 01 — BEFORE WE LEFT -->
+  <section class="chapter" id="chapter-01">
+    <div class="hero-media" id="hero-media">
+      <img id="hero-media-img" alt="Before we left for Hue" loading="eager" />
+    </div>
+    <div class="hero-content">
+      <p class="eyebrow" id="before-eyebrow" data-reveal="fade"></p>
+      <h2 class="display-h1" style="margin-block: var(--space-sm);" data-reveal="fade">
+        <span id="before-heading"></span><br />
+        <em id="before-heading-highlight" style="font-style: italic; color: var(--color-gold-light);"></em>
+      </h2>
+      <p class="body-lg" id="before-body" style="max-width: 60ch; color: rgba(244,239,231,0.85);" data-reveal="fade"></p>
+    </div>
+  </section>
+
+  <!-- CHAPTER 02 — A JOURNEY THROUGH HUE -->
+  <section class="chapter" id="chapter-02">
+    <div class="container">
+      <div class="journey-intro" data-reveal="fade">
+        <p class="eyebrow" id="journey-eyebrow"></p>
+        <h2 class="display-h1 section-heading" id="journey-heading" style="text-align: left; margin-block: var(--space-sm);"></h2>
+        <p class="body-lg" id="journey-intro"></p>
+      </div>
+      <div id="journey-stops"></div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 03 — THE LITTLE THINGS I REMEMBER -->
+  <section class="chapter" id="chapter-03">
+    <div class="container">
+      <div class="section-heading" data-reveal="fade">
+        <p class="eyebrow" id="moments-eyebrow"></p>
+        <h2 class="display-h1" style="margin-block: var(--space-sm);" id="moments-heading"></h2>
+        <p class="body-lg" id="moments-intro" style="max-width: 60ch; margin-inline: auto;"></p>
+      </div>
+      <div class="gallery" id="gallery-grid"></div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 04 — MOVING MEMORIES -->
+  <section class="chapter" id="chapter-04">
+    <div class="container">
+      <div class="section-heading" data-reveal="fade">
+        <p class="eyebrow" id="video-eyebrow"></p>
+        <h2 class="display-h1" style="margin-block: var(--space-sm);">
+          <span id="video-heading"></span><br />
+          <em id="video-heading-highlight" style="font-style: italic; color: var(--color-gold-light);"></em>
+        </h2>
+      </div>
+      <div class="video-grid" id="video-grid"></div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 05 — A LETTER FOR YOU -->
+  <section class="chapter chapter--full" id="chapter-05">
+    <div class="container">
+      <p class="eyebrow" id="letter-eyebrow" data-reveal="fade" style="display:block; text-align:center; margin-bottom: var(--space-md);"></p>
+      <div class="letter" data-reveal="scale">
+        <p class="letter-text" id="letter-opening" style="margin-bottom: var(--space-sm);"></p>
+        <div class="letter-text" id="letter-body"></div>
+        <p class="letter-text" id="letter-closing" style="margin-top: var(--space-sm);"></p>
+        <p class="letter__signature" id="letter-signature"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHAPTER 06 — TO BE CONTINUED -->
+  <section class="chapter chapter--full" id="chapter-06">
+    <div class="container">
+      <h2 class="display-h1" id="final-heading" data-reveal="fade"></h2>
+      <p class="body-lg" id="final-body" style="margin-top: var(--space-sm);" data-reveal="fade"></p>
+      <ul class="body-lg" id="final-list" style="margin-top: var(--space-sm); list-style: none;" data-reveal="fade"></ul>
+      <div class="final-actions" data-reveal="fade">
+        <button class="btn" id="replay-btn"></button>
+        <button class="btn" id="restart-btn"></button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox" data-open="false" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox__close" aria-label="Close photo viewer">✕</button>
+  <button class="lightbox__prev" aria-label="Previous photo">‹</button>
+  <figure class="lightbox__figure">
+    <img class="lightbox__image" src="" alt="" />
+    <figcaption class="lightbox__caption"></figcaption>
+  </figure>
+  <button class="lightbox__next" aria-label="Next photo">›</button>
+</div>
+
+<script src="data/config.js" defer></script>
+<script src="js/data.js" defer></script>
+<script src="js/gallery.js" defer></script>
+<script src="js/video.js" defer></script>
+<script src="js/music.js" defer></script>
+<script src="js/navigation.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
+<script src="js/animations.js" defer></script>
+<script src="js/main.js" defer></script>
+
+</body>
+</html>
