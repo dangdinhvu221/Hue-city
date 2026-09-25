@@ -55,6 +55,99 @@
     top: var(--space-xs);
     right: var(--space-xs);
   }
+
+  /* ---- Scrapbook-style overlap for editorial photo groups on mobile ----
+     Instead of a plain vertical stack, the supporting photos tuck slightly
+     under/beside the previous one, like real prints laid on a page.
+     The parent grids' generous desktop `gap` is tightened here so the
+     negative margins below can actually pull frames into a visible overlap. */
+  .memory-collage {
+    gap: var(--space-sm) 0;
+  }
+
+  .photo-collage,
+  .final-collage-section {
+    gap: var(--space-xs) 0;
+  }
+
+  /* Overlap is applied to the FRAME only (via a wrapping negative margin
+     kept small and constant) so it only eats into surrounding whitespace,
+     never the caption text above it. */
+  .memory-card--2,
+  .memory-card--3 {
+    width: 82%;
+    margin-top: calc(var(--space-xs) * -1);
+    margin-left: auto;
+    margin-right: var(--space-sm);
+    position: relative;
+    z-index: 1;
+  }
+
+  .memory-card--3 {
+    margin-left: var(--space-sm);
+    margin-right: auto;
+  }
+
+  .photo-collage__frame--vertical {
+    width: 78%;
+    margin-left: auto;
+    margin-right: var(--space-sm);
+    position: relative;
+    z-index: 1;
+  }
+
+  .photo-collage__frame--night {
+    width: 70%;
+    margin-top: calc(var(--space-xs) * -1);
+    margin-left: var(--space-sm);
+    margin-right: auto;
+    position: relative;
+    z-index: 1;
+  }
+
+  .final-collage__frame--vertical {
+    width: 78%;
+    margin-left: auto;
+    margin-right: var(--space-sm);
+    position: relative;
+    z-index: 1;
+  }
+
+  .final-collage__frame--architecture {
+    width: 72%;
+    margin-top: calc(var(--space-xs) * -1);
+    margin-left: var(--space-sm);
+    margin-right: auto;
+    position: relative;
+    z-index: 2;
+  }
+
+  .final-collage__frame--night {
+    width: 66%;
+    margin-left: auto;
+    margin-right: var(--space-sm);
+    position: relative;
+    z-index: 3;
+  }
+
+  /* Film strip: make the swipe affordance explicit on touch screens. */
+  .film-strip-section::after {
+    content: "← Vuốt nhẹ để xem thêm →";
+    display: block;
+    text-align: center;
+    margin-top: var(--space-xs);
+    font-size: var(--fs-caption);
+    letter-spacing: var(--ls-wide);
+    color: var(--color-muted);
+  }
+
+  .film-strip__frames {
+    scroll-snap-type: x proximity;
+  }
+
+  .film-strip__frame {
+    scroll-snap-align: start;
+  }
 }
 
 @media (max-width: 480px) {
