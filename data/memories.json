@@ -1,70 +1,79 @@
 {
   "trip": {
-    "title": "A Chapter of Us",
-    "location": "Hue, Vietnam",
+    "title": "Huế — Một Chương Có Em",
+    "location": "Huế, Việt Nam",
     "date": "",
     "dateLabel": "ADD TRIP DATE HERE"
   },
   "invitation": {
-    "eyebrow": "A Chapter Of Us",
-    "title": "HUE",
-    "subtitle": "An interactive love story about our journey through Hue.",
-    "intro": "A little story about you, me, and the days we'll never forget.",
-    "cta": "Open our story"
+    "eyebrow": "Mở Ra Một Chương Thương",
+    "title": "HUẾ",
+    "subtitle": "Chuyến đi của chúng mình, và những điều anh muốn giữ lại mãi.",
+    "intro": "Anh không biết nên tặng em gì, nên anh gom hết những ngày đẹp nhất mình đã đi qua, gói vào đây, cùng rất nhiều điều anh chưa kịp nói.",
+    "cta": "Mở kỷ niệm của chúng mình ♡"
   },
   "beforeWeLeft": {
-    "eyebrow": "Chapter 01 — Before We Left",
-    "heading": "Every journey begins somewhere.",
-    "headingHighlight": "But this one began with you beside me.",
-    "body": "ADD YOUR OWN INTRODUCTION HERE — a short paragraph about how the trip came together.",
-    "heroImage": "",
+    "eyebrow": "Trước Ngày Lên Đường",
+    "heading": "Mọi chuyến đi đều bắt đầu từ một nơi nào đó.",
+    "headingHighlight": "Còn chuyến này, bắt đầu từ một người — là em.",
+    "body": "Trước ngày đi, anh chẳng nhớ mình đã xếp vali bao nhiêu lần. Chỉ nhớ là háo hức, như thể sắp được đi tìm một phiên bản vui hơn của những ngày thường.",
+    "heroImage": "assets/images/moments/2aobor0v4chg3wpobuj2ptq3cna1gzzhust5zwpc308.jpg",
     "heroVideo": ""
   },
   "journey": {
-    "eyebrow": "Chapter 02 — A Journey Through Hue",
-    "heading": "A Journey Through Hue",
-    "intro": "REPLACE WITH REAL LOCATIONS — the stops below are placeholders until real photos and confirmed locations are provided.",
+    "eyebrow": "Huế, Những Ngày Mình Đi Qua",
+    "heading": "Đi Qua Huế, Đi Qua Những Ngày Thương",
+    "intro": "Huế đón mình bằng nắng nhẹ và những con đường chậm rãi. Dưới đây là vài chặng mình đã cùng ghé qua.",
     "stops": [
       {
         "index": "01",
-        "title": "PLACEHOLDER LOCATION",
+        "title": "Cầu gỗ Lim & Cầu Trường Tiền",
         "date": "",
-        "caption": "ADD CAPTION AFTER CONFIRMING THIS LOCATION AND PHOTO.",
-        "image": ""
+        "caption": "Người ta bảo sông Hương hiền lắm. Nhưng hôm đó có em đứng cạnh, nên cả khúc sông cũng hiền hơn một chút.",
+        "image": "assets/images/moments/2aobor0v1xwo2eefz6pc6lqkahqw04jxvfhiea1a8.jpg"
       },
       {
         "index": "02",
-        "title": "PLACEHOLDER LOCATION",
+        "title": "Đại Nội — Hoàng Thành Huế",
         "date": "",
-        "caption": "ADD CAPTION AFTER CONFIRMING THIS LOCATION AND PHOTO.",
-        "image": ""
+        "caption": "Đi giữa những mái ngói đã hàng trăm tuổi, mà tay mình nắm nhau như mới quen.",
+        "image": "assets/images/moments/2aobor0v4y0ska4bthtbthxdxqs2op25vy39cywu323.jpg"
       },
       {
         "index": "03",
-        "title": "PLACEHOLDER LOCATION",
+        "title": "Nơi thời gian đi chậm lại *",
         "date": "",
-        "caption": "ADD CAPTION AFTER CONFIRMING THIS LOCATION AND PHOTO.",
-        "image": ""
+        "caption": "Những pho tượng đá đứng đó đã rất lâu. Anh thì chỉ mới đứng cạnh em một lúc, mà đã thấy muốn ở lại lâu hơn.",
+        "image": "assets/images/moments/2aobor0v4seoq0xow6mmb1youht65ps10mrryybc328.jpg"
+      },
+      {
+        "index": "04",
+        "title": "Một ngôi chùa, một tầng mây *",
+        "date": "",
+        "caption": "Ngước lên nhìn mái chùa xưa, rồi quay sang thấy em đang cười — anh chọn nhìn em lâu hơn.",
+        "image": "assets/images/moments/2aobor0v3zaim9mngvi8xj4w8c4la2yvrs8ukssu249.jpg"
+      },
+      {
+        "index": "05",
+        "title": "Biển Tân An",
+        "date": "",
+        "caption": "Biển hôm đó không ồn ào như anh tưởng. Có lẽ vì đứng cạnh em, mọi thứ tự nhiên dịu lại.",
+        "image": "assets/images/moments/2aobor0v4se9p5jxurxdwzm6gfguziu9dji7tnjs329.jpg"
+      },
+      {
+        "index": "06",
+        "title": "Đạp xe chậm qua một mùa sen",
+        "date": "",
+        "caption": "Không cần đi nhanh. Có em, đường nào cũng thấy đáng đi chậm lại.",
+        "image": "assets/images/moments/2aobor0v4bf4jknchmmvoscjy5pfuh26ivm44fa4313.jpg"
       }
     ]
   },
   "moments": {
-    "eyebrow": "Chapter 03 — The Little Things I Remember",
-    "heading": "The Little Things I Remember",
-    "intro": "Some moments were ordinary. That is exactly why I want to remember them.",
+    "eyebrow": "Chương Ba — Những Mảnh Vụn",
+    "heading": "Những Điều Nhỏ Bé Anh Vẫn Nhớ",
+    "intro": "Không phải khoảnh khắc nào đẹp cũng cần được chuẩn bị trước. Có những điều đẹp nhất, chỉ đơn giản là em ở đó.",
     "gallery": [
-      {
-        "image": "assets/images/moments/2aobor0v1xdr9vmjdc7tljdebsdwkrk7izdteu487.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v1xfdnwvxop4b2btabewt73s8kgxnxoe02.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v1xfoiswwcbwtaohlndi5j989msbd6yry1.jpg",
-        "caption": ""
-      },
       {
         "image": "assets/images/moments/2aobor0v1xhnaiiovf8gt8oad6ak6h5s6w8jwmek9.jpg",
         "caption": ""
@@ -74,15 +83,7 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v1xnfivbvt6denzuiym3pp17hnsvcnyw86.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v1xqvd7kyflb5ryaxqqbcwau9bbuvrska10.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v1xwo2eefz6pc6lqkahqw04jxvfhiea1a8.jpg",
         "caption": ""
       },
       {
@@ -115,22 +116,6 @@
       },
       {
         "image": "assets/images/moments/2aobor0v1yju3gseyxkpnujxz5spmw9h0fzrnvgy15.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v1zak0yqhrx43aexwblwrmz944vxlqhri37.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v1zc338hnb5wsj3u24kdcqdtfhfrxrhxi36.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v1zceouhwosolhgi73watr0szokhyhdyi17.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v1zd3tkttxokm0lxbndr7peakkvrsbysq51.jpg",
         "caption": ""
       },
       {
@@ -170,35 +155,11 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v22145it9jja0ndqsacq9kfrkvmlwql2031.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v22145it9jja0ndqsacq9kfrkvmlwql2065.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v22i5qj7flquv9whkyrypwqdsqgcwtnzi64.jpg",
         "caption": ""
       },
       {
         "image": "assets/images/moments/2aobor0v22iahx0qmgfiqcfsbxe3nye2qawzchym62.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v23a7xhhfsm3yxdb8dkhpvlljzizgkbsm60.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v23a7xhhfsm3yxdcvlstgpcaraukxsuba27.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v23ceu4y93zgi7qltqwdbbosmsozybbvk23.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v23ceu4y93zgi7qltwap8s8otexezuaek25.jpg",
         "caption": ""
       },
       {
@@ -238,10 +199,6 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v2fxhyekhy0dvstvisi0kfoadmiue5m8062.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v2fyaj3knlfmn7mtw5ojiozq5bmeg180881.jpg",
         "caption": ""
       },
@@ -250,19 +207,7 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v2g7ny8bt32lguzs4rer4xqqaco2pukz284.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v2g8gfffyetbzlh4jajfwq49hvvqdrd5683.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v2gaijydgph3vfefr5056c7zlwfpk6hhw71.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v2hphzjycatphqiw2d93flbnz7fuuos5a80.jpg",
         "caption": ""
       },
       {
@@ -302,19 +247,11 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v2iljowbi2axpkpy2lkh4cyhdt1uayqds65.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v2illplxfxnq1b9vvtuxf9z8grm7d236067.jpg",
         "caption": ""
       },
       {
         "image": "assets/images/moments/2aobor0v2iqilibqxxy5xd7rhyfisjkaanqj0gdg69.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v2iqilibqxxy5xdby1cqmdkc4ydbefvse64.jpg",
         "caption": ""
       },
       {
@@ -334,19 +271,7 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v2yxofv2ufskasbaog5kpve5bqg1jmuzi104.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v2yymfiid6ygijy4q2yozd1ukymz60xgs99.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v2z1onj59adu4yyuybh0c7wvqlvgdxcro100.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v2z4gikazs4u7thyyabtq7kbzk39bwb3o101.jpg",
         "caption": ""
       },
       {
@@ -371,14 +296,6 @@
       },
       {
         "image": "assets/images/moments/2aobor0v3bp2kfryceffhc5byewfs3uga2zj0qj2123.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v3bp2kfryceffhcw33edtf2wfcztjqgpm130.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v3bpffow2fyejd152wx8tqlxhwn3mzsgw128.jpg",
         "caption": ""
       },
       {
@@ -442,10 +359,6 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v3mdc50e6xuvco83kdoq5zzoz9lvvqd5k118.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v3mg8wcqxi43whpof8w8hcgft6ugyewjy116.jpg",
         "caption": ""
       },
@@ -498,22 +411,6 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v3w8c2t3huo1fsn1phwabycu9h95kg18i229.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v3wadg9ixqliasignodrn1x8cluqwgbna234.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v3wadg9ixqliasjedum7sjn1w90wyiwcc236.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v3wbauucwaasbbykbkblvhinxtymn2m12230.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v3wc87nuwyevqxwrzknlggr2bddejf5sy235.jpg",
         "caption": ""
       },
@@ -523,10 +420,6 @@
       },
       {
         "image": "assets/images/moments/2aobor0v3wiq5svm2ko5tawkwmorajw6xsbtk0yo240.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v3wjx3vbgnocspmhnbdp7maubfowf8lge232.jpg",
         "caption": ""
       },
       {
@@ -554,19 +447,11 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v3wxwed1ipgtdswafjhr2ordz7hk303ly245.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v3x2geabqcx2ek0xt68wngydfmczcjs1i248.jpg",
         "caption": ""
       },
       {
         "image": "assets/images/moments/2aobor0v3za1koljatao3mxataxlcowkd05k6koy244.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v3zaim9mngvi8xj4w8c4la2yvrs8ukssu249.jpg",
         "caption": ""
       },
       {
@@ -614,14 +499,6 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v40yfnc7codg2ojyeiejlbjxqqxspucgo271.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v40yfnc7codg2okjwl66tgtgshqj5kat2263.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v44x3it3paywjakfnbdro8dmsvswaeocc264.jpg",
         "caption": ""
       },
@@ -635,18 +512,6 @@
       },
       {
         "image": "assets/images/moments/2aobor0v44zxjgjsqlcrdhsj24pvnckap5jhnqlw261.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v45efclts3vlytydqfdq2c9gkcmgljq76262.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v45efclts3vlytz9b3mdhhwyvr25giytu260.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v46a3fmjbdsk1zx3yb6iwtrmtxh8ie036259.jpg",
         "caption": ""
       },
       {
@@ -678,19 +543,7 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4audiabpwsrr6egifcdw7fskvohtcgbo317.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4auwq7mh0qfhzecaas8skahbsc7lmwgc318.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v4bf4jknchmmvoscjy5pfuh26ivm44fa4313.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v4bf4jknchmmvot324ptmukzjvcgc08i4315.jpg",
         "caption": ""
       },
       {
@@ -698,7 +551,7 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4chg3wpobuj2ptq3cna1gzzhust5zwpc308.jpg",
+        "image": "assets/images/moments/2aobor0v4qq1qqe6vpvexf8dkiobvgecztbqbaus301.jpg",
         "caption": ""
       },
       {
@@ -714,23 +567,11 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4fcgqmmhfdunktxlms4b5segpwguhbhm339.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4fcgqmmhfdunkud8mztq3i0rlrexi8vi338.jpg",
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4fholnmc4ynj2v6zdvn4g5brl31n6xpe337.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4hvkuuay1q9fejwmpev9gfuiyafwygoa291.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v4i7eocbagqud5vdyr8dt5njr99l00vc8292.jpg",
         "caption": ""
       },
       {
@@ -746,23 +587,11 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4iovukq8h4gmnwjzpgno2ol8l1hfjedk298.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4iovukq8h4gmnx1njxj4blsipsgqjmpk299.jpg",
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4ioylzmvmhyyehbdyyatp5kf1eo5bfeq297.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4ioylzmvmhyyei4ghzwv7kxscj0zlcvo295.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v4lf4hpxbwrmzqv8gt19er3wtslbkoexg294.jpg",
         "caption": ""
       },
       {
@@ -771,10 +600,6 @@
       },
       {
         "image": "assets/images/moments/2aobor0v4pcg4g05xrilunkiglixspoarhoo7zok285.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v4pzkrnezvxeggyyghdgtatjssy04vwdm280.jpg",
         "caption": ""
       },
       {
@@ -790,10 +615,6 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4rnslupgjbo6szbhvocclj5uwc7rrgxm306.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4rorasmjtnesyzxethnizpob9ec7fmo8316.jpg",
         "caption": ""
       },
@@ -806,23 +627,11 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4sac86dfetfvgwjn5woiplcxn37bfdck331.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4sbupdhlgk6e85glncqrpwnigmpzlbsi333.jpg",
         "caption": ""
       },
       {
         "image": "assets/images/moments/2aobor0v4sdkjpxzvvbcnwhxh1dxlbuu9gbpqtqo332.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v4se9p5jxurxdwzm6gfguziu9dji7tnjs329.jpg",
-        "caption": ""
-      },
-      {
-        "image": "assets/images/moments/2aobor0v4seoq0xow6mmb1youht65ps10mrryybc328.jpg",
         "caption": ""
       },
       {
@@ -846,10 +655,6 @@
         "caption": ""
       },
       {
-        "image": "assets/images/moments/2aobor0v4szgvpyk7btrizk1k5xxqjzu3kzg3ahg334.jpg",
-        "caption": ""
-      },
-      {
         "image": "assets/images/moments/2aobor0v4xph2pi9rwmkje2kcibi32zyogpkagdi325.jpg",
         "caption": ""
       },
@@ -860,30 +665,69 @@
       {
         "image": "assets/images/moments/2aobor0v4y0nswbqthiocc7ab1cwv2x4hhe126qg324.jpg",
         "caption": ""
+      }
+    ],
+    "featured": [
+      {
+        "index": "01",
+        "total": "03",
+        "label": "Một buổi chiều bên sông",
+        "caption": "Có những buổi chiều chẳng cần làm gì nhiều, chỉ cần có em đứng cạnh là đủ để anh nhớ rất lâu.",
+        "image": "assets/images/moments/2aobor0v1xdr9vmjdc7tljdebsdwkrk7izdteu487.jpg"
       },
       {
-        "image": "assets/images/moments/2aobor0v4y0ska4bthtbthxdxqs2op25vy39cywu323.jpg",
-        "caption": ""
+        "index": "02",
+        "total": "03",
+        "label": "Huế khi đêm xuống",
+        "caption": "Thành phố lên đèn, còn anh thì cứ mải nhìn một người.",
+        "image": "assets/images/moments/2aobor0v2g7ny8bt32lguzs4rer4xqqaco2pukz284.jpg"
+      },
+      {
+        "index": "03",
+        "total": "03",
+        "label": "Một góc Huế",
+        "caption": "Có những nơi mình chỉ đi qua một lần, nhưng lại có người khiến mình muốn quay lại.",
+        "image": "assets/images/moments/2aobor0v4raab5xurbntg3mrhknmkjudm3hazomq320.jpg"
       }
-    ]
+    ],
+    "cinematicPhoto": {
+      "index": "02",
+      "total": "07",
+      "label": "Một buổi chiều ở Huế",
+      "caption": "Nắng chiều rơi qua từng tán cây, chầm chậm như những bước chân mình hôm ấy.",
+      "image": "assets/images/moments/2aobor0v4se9p5jxurxdwzm6gfguziu9dji7tnjs329.jpg"
+    },
+    "collage": {
+      "index": "03",
+      "total": "07",
+      "label": "Một ngày mình đi qua Huế",
+      "caption": "Có những góc phố mình chỉ lướt qua, vậy mà vẫn nhớ vì hôm đó có nhau.",
+      "main": "assets/images/moments/2aobor0v1zc338hnb5wsj3u24kdcqdtfhfrxrhxi36.jpg",
+      "vertical": "assets/images/moments/2aobor0v3wxwed1ipgtdswafjhr2ordz7hk303ly245.jpg",
+      "night": "assets/images/moments/2aobor0v2yxofv2ufskasbaog5kpve5bqg1jmuzi104.jpg"
+    },
+    "filmStrip": {
+      "index": "04",
+      "total": "07",
+      "label": "Những khoảnh khắc bình thường",
+      "caption": "Không tấm nào được chuẩn bị trước. Nhưng tấm nào cũng có em trong đó.",
+      "images": [
+        "assets/images/moments/2aobor0v1xfdnwvxop4b2btabewt73s8kgxnxoe02.jpg",
+        "assets/images/moments/2aobor0v1zak0yqhrx43aexwblwrmz944vxlqhri37.jpg",
+        "assets/images/moments/2aobor0v22145it9jja0ndqsacq9kfrkvmlwql2031.jpg",
+        "assets/images/moments/2aobor0v2fxhyekhy0dvstvisi0kfoadmiue5m8062.jpg",
+        "assets/images/moments/2aobor0v2iljowbi2axpkpy2lkh4cyhdt1uayqds65.jpg",
+        "assets/images/moments/2aobor0v3bpffow2fyejd152wx8tqlxhwn3mzsgw128.jpg",
+        "assets/images/moments/2aobor0v3mdc50e6xuvco83kdoq5zzoz9lvvqd5k118.jpg",
+        "assets/images/moments/2aobor0v3w8c2t3huo1fsn1phwabycu9h95kg18i229.jpg"
+      ]
+    }
   },
   "movingMemories": {
-    "eyebrow": "Chapter 04 — Moving Memories",
-    "heading": "A day in Hue.",
-    "headingHighlight": "A thousand little moments. One unforgettable memory.",
+    "eyebrow": "Chương Bốn — Chuyển Động",
+    "heading": "Giữ Lại Những Ngày Có Em",
+    "headingHighlight": "",
     "videos": [
-      {
-        "src": "assets/videos/2aobor0v1yljcscls2lu2wypcwarnpdpfzsc9iyy40.mp4",
-        "poster": "assets/images/posters/2aobor0v1yljcscls2lu2wypcwarnpdpfzsc9iyy40.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v2daymmxykjhkueojt1yctzjet7jao8lq57.mp4",
-        "poster": "assets/images/posters/2aobor0v2daymmxykjhkueojt1yctzjet7jao8lq57.jpg",
-        "orientation": "landscape",
-        "caption": ""
-      },
       {
         "src": "assets/videos/2aobor0v2i56frj673jo9rrzxejff9x6dvl4j7iq46.mp4",
         "poster": "assets/images/posters/2aobor0v2i56frj673jo9rrzxejff9x6dvl4j7iq46.jpg",
@@ -903,32 +747,14 @@
         "caption": ""
       },
       {
-        "src": "assets/videos/2aobor0v2pcukjqztd5bx980azswr6epauuplw4088.mp4",
-        "poster": "assets/images/posters/2aobor0v2pcukjqztd5bx980azswr6epauuplw4088.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
         "src": "assets/videos/2aobor0v2qsp33yzilb97gwmnydkksgbomnuxwdc87.mp4",
         "poster": "assets/images/posters/2aobor0v2qsp33yzilb97gwmnydkksgbomnuxwdc87.jpg",
         "orientation": "portrait",
         "caption": ""
       },
       {
-        "src": "assets/videos/2aobor0v2qsp33yzilb97gwmnydkksgbomnuxwdc89.mp4",
-        "poster": "assets/images/posters/2aobor0v2qsp33yzilb97gwmnydkksgbomnuxwdc89.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
         "src": "assets/videos/2aobor0v2s1z2tg3pj5a70jowz7sfc7wc9nvcon290.mp4",
         "poster": "assets/images/posters/2aobor0v2s1z2tg3pj5a70jowz7sfc7wc9nvcon290.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v2s1z2tg3pj5a70jowz7sfc7wc9nvcon291.mp4",
-        "poster": "assets/images/posters/2aobor0v2s1z2tg3pj5a70jowz7sfc7wc9nvcon291.jpg",
         "orientation": "portrait",
         "caption": ""
       },
@@ -951,12 +777,6 @@
         "caption": ""
       },
       {
-        "src": "assets/videos/2aobor0v2xzw1zfijecibs1xrgano8u2ywk29gx2138.mp4",
-        "poster": "assets/images/posters/2aobor0v2xzw1zfijecibs1xrgano8u2ywk29gx2138.jpg",
-        "orientation": "landscape",
-        "caption": ""
-      },
-      {
         "src": "assets/videos/2aobor0v2yxewehr0enbmbfuoztamycoq8qsie1a134.mp4",
         "poster": "assets/images/posters/2aobor0v2yxewehr0enbmbfuoztamycoq8qsie1a134.jpg",
         "orientation": "landscape",
@@ -971,12 +791,6 @@
       {
         "src": "assets/videos/2aobor0v32zf5iyylmesg1aal4yxd60qpl73dkee133.mp4",
         "poster": "assets/images/posters/2aobor0v32zf5iyylmesg1aal4yxd60qpl73dkee133.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v3ax2j8nzsfpelc1eo1rol3ualuxvj91c150.mp4",
-        "poster": "assets/images/posters/2aobor0v3ax2j8nzsfpelc1eo1rol3ualuxvj91c150.jpg",
         "orientation": "portrait",
         "caption": ""
       },
@@ -1023,12 +837,6 @@
         "caption": ""
       },
       {
-        "src": "assets/videos/2aobor0v3lsbtjbbotelhxqiw9lcnrc5eysie3is224.mp4",
-        "poster": "assets/images/posters/2aobor0v3lsbtjbbotelhxqiw9lcnrc5eysie3is224.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
         "src": "assets/videos/2aobor0v3mrnrieso1nt9fdvc1xairlxhvr9wegg140.mp4",
         "poster": "assets/images/posters/2aobor0v3mrnrieso1nt9fdvc1xairlxhvr9wegg140.jpg",
         "orientation": "portrait",
@@ -1071,48 +879,6 @@
         "caption": ""
       },
       {
-        "src": "assets/videos/2aobor0v49urwfjo8zokldynqq51qfpnqr0b8qvi279.mp4",
-        "poster": "assets/images/posters/2aobor0v49urwfjo8zokldynqq51qfpnqr0b8qvi279.jpg",
-        "orientation": "landscape",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v4eox4z0blv2hn8kfem2790wyxivryiba302.mp4",
-        "poster": "assets/images/posters/2aobor0v4eox4z0blv2hn8kfem2790wyxivryiba302.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v4epvyy6q1pc8du08bdpdvkxcrqo7mwyu346.mp4",
-        "poster": "assets/images/posters/2aobor0v4epvyy6q1pc8du08bdpdvkxcrqo7mwyu346.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v4fwyqzsoztsghrghqopom3cfevvyupku304.mp4",
-        "poster": "assets/images/posters/2aobor0v4fwyqzsoztsghrghqopom3cfevvyupku304.jpg",
-        "orientation": "landscape",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v4hp67sj9lr94hg1jusngxjl5tdzbey64303.mp4",
-        "poster": "assets/images/posters/2aobor0v4hp67sj9lr94hg1jusngxjl5tdzbey64303.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v4kuzftj67avjie0r0ju3dqatdafdd5di305.mp4",
-        "poster": "assets/images/posters/2aobor0v4kuzftj67avjie0r0ju3dqatdafdd5di305.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v4n0vbhzkxdaadjtcyfrrgptnsc4keaca307.mp4",
-        "poster": "assets/images/posters/2aobor0v4n0vbhzkxdaadjtcyfrrgptnsc4keaca307.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
         "src": "assets/videos/2aobor0v4qmjwsrbffoonzebnfskbsxkxq7scnsg342.mp4",
         "poster": "assets/images/posters/2aobor0v4qmjwsrbffoonzebnfskbsxkxq7scnsg342.jpg",
         "orientation": "portrait",
@@ -1121,12 +887,6 @@
       {
         "src": "assets/videos/2aobor0v4rvqajoggncefu0k9xjr7n3uwze1g9va340.mp4",
         "poster": "assets/images/posters/2aobor0v4rvqajoggncefu0k9xjr7n3uwze1g9va340.jpg",
-        "orientation": "portrait",
-        "caption": ""
-      },
-      {
-        "src": "assets/videos/2aobor0v4rvqajoggncefu0k9xjr7n3uwze1g9va344.mp4",
-        "poster": "assets/images/posters/2aobor0v4rvqajoggncefu0k9xjr7n3uwze1g9va344.jpg",
         "orientation": "portrait",
         "caption": ""
       },
@@ -1154,28 +914,171 @@
         "orientation": "portrait",
         "caption": ""
       }
-    ]
+    ],
+    "intro": "Có những kỷ niệm chỉ cần nhì lại một lần, mọi âm thanh, ánh sáng và cảm xúc của ngày hôm ấy lại trở về.",
+    "cinematicVideo": {
+      "index": "05",
+      "total": "07",
+      "label": "Những khoảnh khắc biết chuyển động",
+      "caption": "",
+      "src": "assets/videos/2aobor0v2daymmxykjhkueojt1yctzjet7jao8lq57.mp4",
+      "poster": "assets/images/posters/2aobor0v2daymmxykjhkueojt1yctzjet7jao8lq57.jpg",
+      "orientation": "landscape"
+    },
+    "verticalMemory": {
+      "index": "06",
+      "total": "07",
+      "label": "Một đoạn phim bỏ túi",
+      "caption": "Một đoạn phim ngắn, mà là cả một buổi chiều dài trong ký ức.",
+      "video": {
+        "src": "assets/videos/2aobor0v1yljcscls2lu2wypcwarnpdpfzsc9iyy40.mp4",
+        "poster": "assets/images/posters/2aobor0v1yljcscls2lu2wypcwarnpdpfzsc9iyy40.jpg",
+        "orientation": "portrait",
+        "caption": ""
+      },
+      "photo": "assets/images/moments/2aobor0v40yfnc7codg2ojyeiejlbjxqqxspucgo271.jpg"
+    },
+    "finalCollage": {
+      "index": "07",
+      "total": "07",
+      "label": "Những mảnh ký ức",
+      "caption": "Không phải tất cả sẽ được nhớ. Nhưng có những khoảnh khắc, tự nhiên ở lại.",
+      "landscape": "assets/images/moments/2aobor0v3wadg9ixqliasjedum7sjn1w90wyiwcc236.jpg",
+      "vertical": "assets/images/moments/2aobor0v4audiabpwsrr6egifcdw7fskvohtcgbo317.jpg",
+      "architecture": "assets/images/moments/2aobor0v1zceouhwosolhgi73watr0szokhyhdyi17.jpg",
+      "night": "assets/images/moments/2aobor0v2z4gikazs4u7thyyabtq7kbzk39bwb3o101.jpg"
+    }
   },
   "letter": {
-    "eyebrow": "Chapter 05 — A Letter For You",
-    "heading": "A Letter For You",
+    "eyebrow": "Chương Năm — Lá Thư",
+    "heading": "Gửi Em, Người Anh Thương",
     "opening": "Em à,",
     "body": [
-      "Có lẽ em không biết, nhưng sau chuyến đi Huế ấy, có rất nhiều khoảnh khắc nhỏ cứ ở lại trong đầu anh...",
-      "EDIT THIS LETTER — write your own words here. This is placeholder text only."
+      "Có thể với em, chuyến đi Huế chỉ là vài ngày mình tạm rời khỏi những bận rộn thường nhật. Nhưng với anh, đó lại là những ngày anh muốn giữ thật lâu.",
+      "Không phải vì Huế đẹp — dù đúng là rất đẹp — mà vì suốt chuyến đi đó, mỗi lần quay sang, anh đều thấy em ở ngay bên cạnh.",
+      "Anh nhớ lúc mình che chung một chiếc ô giữa cơn mưa Huế bất chợt. Nhớ cả lúc đạp xe chầm chậm qua một mùa sen, chỉ để nhìn em cười. Những điều rất nhỏ, vậy mà anh giữ lại hết.",
+      "Đi đến đâu cũng được, miễn là người đi cùng anh là em. Huế, hay bất cứ nơi nào khác, cũng chỉ là bối cảnh thôi. Điều khiến một chuyến đi đáng nhớ, luôn là người ngồi cạnh mình trên suốt quãng đường.",
+      "Anh không biết sau này mình sẽ còn đi bao nhiêu nơi nữa. Nhưng anh mong, ở tất cả những chuyến đi sau này, vẫn sẽ luôn có em."
     ],
-    "closing": "Thank you for being my favorite part of every journey.",
-    "signature": "— Vũ ♡"
+    "closing": "Cảm ơn em, vì đã là phần đẹp nhất trong mọi chuyến đi của anh.",
+    "signature": "Vũ ♡ Trang"
   },
   "toBeContinued": {
-    "heading": "This is not the end.",
-    "body": "It's just one chapter of our story.",
+    "eyebrow": "Chương Sáu — Còn Tiếp",
+    "heading": "Và Câu Chuyện Của Chúng Mình Vẫn Tiếp Tục",
+    "body": "Huế đã khép lại một chuyến đi. Nhưng với anh, đó chỉ là một chương nhỏ trong câu chuyện dài mà anh mong mình sẽ còn viết tiếp cùng nhau.",
     "list": [
-      "More places.",
-      "More memories.",
-      "More us."
+      "Thêm nhiều nơi để đến.",
+      "Thêm nhiều ngày để nhớ.",
+      "Thêm thật nhiều lần được nắm tay em trên những hành trình mới."
     ],
-    "replayLabel": "Replay our story",
-    "restartLabel": "Back to beginning"
+    "finalMessage": "Cảm ơn em vì đã xuất hiện, và khiến những chuyến đi của anh trở nên đáng nhớ hơn.",
+    "replayLabel": "Xem lại từ đầu ♡",
+    "restartLabel": "Về lại ngày mở đầu"
+  },
+  "loveNotes": {
+    "eyebrow": "Một Góc Riêng",
+    "heading": "Huế Có Thơ, Anh Có Em",
+    "intro": "Vài câu thương gửi người đã đi cùng anh suốt chuyến ấy.",
+    "cta": "Xem một câu thương",
+    "nextLabel": "Câu tiếp theo →",
+    "lines": [
+      {
+        "mood": "poetic",
+        "text": "Huế có sông Hương để người ta nhớ, anh có em để mỗi lần nhớ Huế, lại nhớ thêm một người."
+      },
+      {
+        "mood": "poetic",
+        "text": "Người ta bảo Huế mộng mơ, anh thấy chẳng bằng những lúc em vô tư cười cạnh anh."
+      },
+      {
+        "mood": "poetic",
+        "text": "Đi qua bao nhiêu con phố ở Huế, anh vẫn thích nhất con đường có em đi cùng."
+      },
+      {
+        "mood": "poetic",
+        "text": "Nắng Huế rồi cũng tắt, mưa Huế rồi cũng tạnh. Chỉ có thương em là anh chưa thấy đâu là điểm dừng."
+      },
+      {
+        "mood": "poetic",
+        "text": "Có những nơi người ta đến một lần rồi quên. Huế thì anh nhớ, vì ở đó có một ngày rất riêng của hai đứa mình."
+      },
+      {
+        "mood": "poetic",
+        "text": "Nếu phải chọn một khung hình đẹp nhất của Huế, anh chọn khung hình có em đứng trong đó."
+      },
+      {
+        "mood": "poetic",
+        "text": "Huế có những ngày mưa rơi rất khẽ, còn anh có một người chỉ cần cười thôi cũng đủ làm ngày nắng lên."
+      },
+      {
+        "mood": "poetic",
+        "text": "Người ta bảo Huế đẹp vì nét trầm mặc. Anh nghĩ Huế còn đẹp hơn vào ngày có em cùng anh đi qua."
+      },
+      {
+        "mood": "poetic",
+        "text": "Có lẽ Huế chẳng giữ chân ai bằng những điều quá lớn lao. Chỉ là một buổi chiều, một dòng sông, và một người khiến mình muốn quay lại."
+      },
+      {
+        "mood": "poetic",
+        "text": "Nếu có thể cất riêng một buổi chiều trong chuyến đi ấy, anh sẽ cất buổi chiều có em bên cạnh."
+      },
+      {
+        "mood": "poetic",
+        "text": "Mình đã đi qua những con đường ở Huế, nhưng điều anh muốn đi cùng em nhất vẫn là những ngày phía trước."
+      },
+      {
+        "mood": "poetic",
+        "text": "Huế có thể khiến người ta thương một vùng đất. Còn em khiến anh thương cả những ngày bình thường."
+      },
+      {
+        "mood": "flirty",
+        "text": "Huế có Đại Nội, còn anh có một nội dung quan trọng hơn: nhớ em mỗi ngày."
+      },
+      {
+        "mood": "flirty",
+        "text": "Nghe nói Huế thương ai thì thương lâu lắm. Vậy mình thương nhau lâu một chút, được không em?"
+      },
+      {
+        "mood": "flirty",
+        "text": "Anh định đến Huế để ngắm cảnh, nào ngờ lại mải ngắm em."
+      },
+      {
+        "mood": "flirty",
+        "text": "Người ta đi Huế để tìm chốn bình yên. Anh đi Huế, rồi lỡ tìm luôn một người muốn đi cùng dài lâu."
+      },
+      {
+        "mood": "flirty",
+        "text": "Ở Huế có món gì ngon, anh cũng nhường em ăn trước. Riêng khoản này thì đừng hỏi lý do, tự em biết."
+      },
+      {
+        "mood": "flirty",
+        "text": "Huế trầm lắng thật, nhưng tim anh thì không — nhất là mỗi lần em quay sang cười với anh."
+      },
+      {
+        "mood": "playful",
+        "text": "Huế hôm ấy hơi nắng, em hôm ấy hơi xinh, còn anh thì hơi... hết cách."
+      },
+      {
+        "mood": "playful",
+        "text": "Đi Huế mang theo máy ảnh, về nhà mang theo một đống ảnh em."
+      },
+      {
+        "mood": "playful",
+        "text": "Em bảo chuyến đi vui vì Huế đẹp. Anh thì nghĩ Huế đẹp vì chuyến đi có em."
+      },
+      {
+        "mood": "playful",
+        "text": "Đi cả ngày ở Huế, mỏi chân thật, nhưng nhìn em cười là quên sạch."
+      },
+      {
+        "mood": "playful",
+        "text": "Huế có bánh, có bèo, có nậm, có lọc. Anh thì chỉ có mỗi một món: ngồi cạnh em."
+      },
+      {
+        "mood": "playful",
+        "text": "Chụp cả trăm tấm ảnh ở Huế, mà tấm nào đẹp nhất vẫn là tấm em vô tình lọt vào khung hình."
+      }
+    ]
   }
 }

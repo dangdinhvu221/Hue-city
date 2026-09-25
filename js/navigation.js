@@ -13,7 +13,7 @@ HUE.initNavigation = function initNavigation() {
     .filter((c) => c.el);
 
   nav.innerHTML = chapters.map((c, i) => `
-    <button class="chapter-nav__item" data-target="${c.id}" aria-label="Go to chapter: ${c.label}"
+    <button class="chapter-nav__item" data-target="${c.id}" aria-label="Đến chương: ${c.label}"
       aria-current="${i === 0 ? 'true' : 'false'}">
       <span class="chapter-nav__label">${c.label}</span>
     </button>
@@ -64,7 +64,63 @@ HUE.initNavigation = function initNavigation() {
     const target = document.getElementById(id);
     if (target) target.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
   };
+
+  initQuickMenu(chapters);
 };
+
+/**
+ * A tap-to-open menu listing every chapter so visitors — especially on
+ * mobile — can jump straight to what they want instead of scrolling the
+ * whole page.
+ */
+function initQuickMenu(chapters) {
+  const toggle = document.getElementById('quick-menu-toggle');
+  const menu = document.getElementById('quick-menu');
+  const list = document.getElementById('quick-menu-list');
+  if (!toggle || !menu || !list) return;
+
+  const entries = chapters.map((c) => ({ id: c.id, label: c.label }));
+
+  list.innerHTML = entries.map((e) => `
+    <li><button class="quick-menu__item" data-target="${e.id}">${e.label}</button></li>
+  `).join('');
+
+  function open() {
+    menu.setAttribute('data-open', 'true');
+    toggle.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    menu.setAttribute('data-open', 'false');
+    toggle.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+  }
+
+  toggle.addEventListener('click', () => {
+    if (menu.getAttribute('data-open') === 'true') close();
+    else open();
+  });
+
+  menu.addEventListener('click', (e) => {
+    if (e.target === menu) close();
+  });
+
+  list.querySelectorAll('.quick-menu__item').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const target = document.getElementById(btn.dataset.target);
+      close();
+      if (target) {
+        setTimeout(() => {
+          target.scrollIntoView({ behavior: prefersReducedMotion() ? 'auto' : 'smooth' });
+        }, 50);
+      }
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && menu.getAttribute('data-open') === 'true') close();
+  });
+}
 
 function prefersReducedMotion() {
   return window.matchMedia('(prefers-reduced-motion: reduce)').matches;

@@ -68,7 +68,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(20,17,15,0.75) 0%, rgba(20,17,15,0.15) 55%, transparent 100%);
+  background: linear-gradient(to top, rgba(20,17,15,0.88) 0%, rgba(20,17,15,0.55) 45%, rgba(20,17,15,0.15) 75%, transparent 100%);
 }
 
 .hero-media::before {
@@ -91,6 +91,20 @@
 
 .hero-content .eyebrow {
   color: var(--color-gold-light);
+}
+
+.hero-content h2,
+.hero-content h2 span {
+  color: var(--color-ivory);
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.hero-content h2 em {
+  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.45);
+}
+
+.hero-content .body-lg {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
 }
 
 /* ---- Chapter 02: Journey ---- */

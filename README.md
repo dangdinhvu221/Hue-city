@@ -1,6 +1,11 @@
-# HUE — A Chapter of Us
+# HUẾ — Một Chương Có Em
 
-An interactive, cinematic love-story website — a personal gift telling the story of a real trip to Hue, Vietnam. Static site, no build step, no backend.
+Website tình yêu tương tác, điện ảnh — món quà kể lại chuyến đi Huế có thật. Static site, không build step, không backend. Toàn bộ nội dung hiển thị đã Việt hóa 100% (xem `data/memories.json`).
+
+**Tính năng mới nhất:**
+- Nhạc nền nhúng qua YouTube IFrame API (2 bài, không tải file — xem `js/music.js`, `data/config.js`).
+- Section mới "Huế Có Thơ, Anh Có Em" — 24 câu thương gốc, xem trong trang (giữa Chapter 04 và 05) hoặc bất cứ lúc nào qua nút tròn nổi góc dưới-phải (♎).
+- Menu "Đi nhanh đến" (nút ☰ góc trên-phải) — nhảy thẳng đến bất kỳ chương nào, không cần cuộn hết trang.
 
 ## 1. Chạy thử ở local
 
@@ -43,43 +48,33 @@ Hue-city/
 
 ## 3. Về media hiện tại — QUAN TRỌNG
 
-Bạn đã xác nhận 250 file trong `assets/images/imagesAndVideos/images/` (203 ảnh + 47 video) là ảnh/video thật của chuyến đi Huế. Tôi đã:
+Bạn đã xác nhận 250 file trong `assets/images/imagesAndVideos/images/` (203 ảnh + 47 video) là ảnh/video thật của chuyến đi Huế. Quy trình đã thực hiện, đầy đủ chi tiết nằm trong **`MEDIA_CATALOG.md`** (đọc file này trước khi sửa `memories.json`):
 
-1. **Nén ảnh để web tải nhanh**: mỗi ảnh gốc (~1-3MB) → resize còn tối đa 1600px, nén còn trung bình ~270KB, lưu tại `assets/images/moments/`. Bản gốc chưa đụng tới được giữ nguyên tại `assets/images/moments-original/` (đã kiểm tra checksum khớp 100% với bản gốc).
-2. **Giữ nguyên video** — không nén (47 video, ~307MB) — vì video chỉ tải khi người xem bấm Play (lazy-load), nên không tốn băng thông nếu không xem. Nếu muốn giảm dung lượng gửi đi, có thể nhờ tôi nén video sau.
-3. **Tự tạo poster/thumbnail** cho từng video bằng cách trích 1 khung hình, lưu tại `assets/images/posters/`.
-4. **Đưa toàn bộ 203 ảnh vào Chapter 03 (The Little Things I Remember)** — vì đây là gallery tổng hợp, phù hợp để chứa mọi ảnh mà không cần biết ảnh nào chụp ở đâu.
-5. **Đưa toàn bộ 47 video vào Chapter 04 (Moving Memories)**.
+1. **Nén ảnh để web tải nhanh**: mỗi ảnh gốc → resize tối đa 1600px, nén còn trung bình ~270KB, lưu tại `assets/images/moments/`. Bản gốc giữ nguyên tại `assets/images/moments-original/` (đã kiểm tra checksum khớp 100%).
+2. **Giữ nguyên chất lượng video** (không nén) — video chỉ tải khi bấm Play nên không tốn băng thông nếu không xem.
+3. **Xem qua toàn bộ 203 ảnh + 47 video** (bằng contact sheet, không đoán mò), nhóm thành các cụm theo nội dung thực tế nhìn thấy, phát hiện ảnh/video trùng lặp bằng thuật toán perceptual hash — xem chi tiết từng cụm, từng file trong `MEDIA_CATALOG.md`.
+4. **Đã gắn vào site**:
+   - `beforeWeLeft.heroImage` — 1 ảnh cầu/sông lúc hoàng hôn (P006 trong catalog).
+   - `journey.stops` — 6 địa điểm, mỗi địa điểm 1 ảnh đại diện. **Tên địa điểm đang ghi kèm "(cần xác nhận)"** vì đây là suy đoán từ hình ảnh (kiến trúc trông giống Đại Nội, một khu lăng tẩm, một ngôi chùa có tháp cổ...) — **chưa phải tên đã xác nhận, bạn cần tự kiểm tra và sửa lại cho đúng**.
+   - `moments.gallery` — 173 ảnh (203 gốc, trừ 4 ảnh riêng tư trong phòng, trừ 7 ảnh đã dùng làm hero/journey, trừ 19 ảnh trùng/gần trùng đã tự động lọc bớt).
+   - `movingMemories.videos` — 33 video (47 gốc, trừ 8 video tối/rung/mờ chất lượng thấp, trừ 6 video trùng lặp gần như y hệt).
+5. **4 ảnh riêng tư (soi gương, đắp mặt nạ trong phòng) đã KHÔNG đưa vào gallery công khai** — vẫn còn nguyên trong `assets/images/moments/` nếu bạn muốn tự thêm lại.
 
-**Tôi CHƯA tự chọn ảnh cho:**
-- `beforeWeLeft.heroImage` (ảnh nền lớn ở Chapter 01) — đang để trống.
-- `journey.stops[].image` (ảnh đại diện từng địa điểm ở Chapter 02) — đang để trống, kèm placeholder `"PLACEHOLDER LOCATION"`.
+**Vẫn cần bạn làm tiếp:**
+- Xác nhận/sửa lại 6 tên địa điểm ở Chapter 02 (đang đánh dấu rõ "(cần xác nhận)" để không ai nhầm là đã chốt).
+- Ngày đi, tên tỉnh/thành cụ thể ở `trip`.
+- Duyệt lại 173 ảnh trong Chapter 03 một lượt — dù đã lọc bớt ảnh riêng tư rõ ràng, tôi chưa xem xét kỹ từng ảnh ở mức "có nên công khai không", chỉ lọc theo tiêu chí kỹ thuật (trùng lặp, chất lượng).
 
-Lý do: tôi thử chọn tự động 1 ảnh "landscape" đầu tiên làm hero, nhưng ảnh đó lại là một khoảnh khắc riêng tư (không phù hợp để làm ảnh mở đầu of site) và bị lật ngang do file gốc không có dữ liệu xoay ảnh (EXIF). Việc chọn ảnh nổi bật nhất site cần con người xem qua nội dung, không nên để thuật toán chọn ngẫu nhiên. **Bạn hãy tự chọn** 1 ảnh cho hero và tối đa vài ảnh cho từng địa điểm ở Chapter 02, rồi:
-
-```json
-"beforeWeLeft": {
-  "heroImage": "assets/images/moments/<tên-file-bạn-chọn>.jpg"
-},
-"journey": {
-  "stops": [
-    { "index": "01", "title": "Tên địa điểm thật", "image": "assets/images/moments/<tên-file>.jpg", ... }
-  ]
-}
-```
-
-**Lưu ý riêng tư**: tôi đã xem lướt qua kết quả để kiểm tra hiển thị đúng, nhưng **chưa duyệt nội dung từng ảnh trong 203 ảnh**. Nếu trong đó có ảnh riêng tư không muốn xuất hiện trong gallery công khai của Chapter 03, bạn nên tự lướt qua site 1 lượt và xoá entry tương ứng khỏi `data/memories.json` (`moments.gallery`) trước khi gửi.
-
-**Dọn dẹp còn lại**: thư mục gốc `assets/images/imagesAndVideos/` (545MB) hiện vẫn còn — toàn bộ nội dung của nó đã được sao chép an toàn vào `moments-original/` (ảnh) và `assets/videos/` (video, đã kiểm tra checksum khớp), nên bạn có thể tự xoá `assets/images/imagesAndVideos/` để giải phóng ổ đĩa nếu muốn. Tôi không tự xoá vì đây là thao tác khó hoàn tác trên 545MB dữ liệu gốc.
+**Dọn dẹp còn lại**: thư mục gốc `assets/images/imagesAndVideos/` (545MB) hiện vẫn còn — nội dung đã được sao chép an toàn vào `moments-original/` và `assets/videos/` (đã kiểm tra checksum khớp), có thể tự xoá để giải phóng ổ đĩa. Tôi không tự xoá vì khó hoàn tác trên 545MB dữ liệu gốc.
 
 ## 4. Sửa nội dung / lời nhắn
 
 Toàn bộ text hiển thị (tiêu đề, caption, lá thư ở Chapter 05...) nằm trong `data/memories.json`. Các chỗ đang là placeholder được viết hoa rõ ràng, ví dụ:
 
-- `journey.stops[].title` → `"PLACEHOLDER LOCATION"` — thay bằng tên địa điểm thật đã xác nhận.
+- `journey.stops[].title` → đang ghi kèm `"(cần xác nhận)"` — sửa thành tên địa điểm thật đã xác nhận, bỏ phần "(cần xác nhận)" đi.
 - `letter.body` → mảng các đoạn văn — thay bằng lời nhắn thật của bạn.
 - `trip.date`, `journey.stops[].date` → để trống, điền khi có ngày chính xác.
-- `moments.gallery[].caption` → để trống cho cả 203 ảnh (tôi không tự bịa caption) — bạn có thể điền caption cho những ảnh muốn chú thích, để trống thì ảnh hiển thị không caption, không sao cả.
+- `moments.gallery[].caption` → để trống cho cả 173 ảnh (tôi không tự bịa caption) — bạn có thể điền caption cho những ảnh muốn chú thích, để trống thì ảnh hiển thị không caption, không sao cả.
 
 **Không có ngày tháng, địa điểm, hay chi tiết nào bị tự ý bịa ra** — tất cả các trường chưa xác nhận đều để trống hoặc đánh dấu rõ là placeholder, theo đúng yêu cầu trong `promt.txt`.
 
@@ -110,26 +105,26 @@ Sau đó vào **Settings → Pages** trên GitHub, chọn branch `main`, thư m�
 - Sticky chapter navigation (dot nav bên phải) + thanh progress bar trên cùng.
 - Scroll-triggered reveal animation bằng GSAP + ScrollTrigger, có fallback IntersectionObserver khi GSAP không tải được.
 - Tôn trọng `prefers-reduced-motion` (tắt animation, giữ nguyên nội dung).
-- Editorial masonry gallery (203 ảnh thật) + lightbox (bàn phím: ←/→/Esc).
-- Video reel (47 video thật): lazy-load, custom play/pause/mute/progress, tự nhận diện chiều dọc/ngang, chỉ 1 video phát cùng lúc, tự pause khi cuộn ra khỏi màn hình.
+- Editorial masonry gallery (173 ảnh thật, đã lọc trùng lặp + ảnh riêng tư) + lightbox (bàn phím: ←/→/Esc).
+- Video reel (33 video thật, đã lọc video tối/mờ/trùng lặp): lazy-load, custom play/pause/mute/progress, tự nhận diện chiều dọc/ngang, chỉ 1 video phát cùng lúc, tự pause khi cuộn ra khỏi màn hình.
 - Nhạc nền toggle, chỉ phát sau khi người dùng tương tác.
 - Loading screen, xử lý ảnh/video thiếu bằng placeholder trực quan (không vỡ layout).
 - Responsive mobile-first, keyboard navigation, focus state rõ ràng, favicon, SEO meta cơ bản.
 
 ## 8. Giới hạn hiện tại (known limitations)
 
-- **Chưa có ảnh hero (Chapter 01) và ảnh địa điểm (Chapter 02)** — cần bạn tự chọn (xem mục 3).
-- **Chưa có tên địa điểm/ngày/nội dung thư thật** — cần bạn điền vào `memories.json`.
-- **203 ảnh trong Chapter 03 chưa được bạn duyệt riêng tư** — nên tự lướt qua 1 lượt trước khi gửi.
+- **Tên 6 địa điểm ở Chapter 02 chưa được xác nhận** — đang ghi "(cần xác nhận)" trong tiêu đề, xem `MEDIA_CATALOG.md` mục 6.
+- **Chưa có ngày đi / nội dung thư thật** — cần bạn điền vào `memories.json`.
+- **173 ảnh trong Chapter 03 mới lọc theo tiêu chí kỹ thuật** (trùng lặp, riêng tư rõ ràng) — chưa được bạn duyệt kỹ từng ảnh, nên tự lướt qua 1 lượt trước khi gửi.
 - Video giữ nguyên dung lượng gốc (~307MB tổng) — nếu cần nhẹ hơn để gửi qua mạng yếu, báo tôi nén thêm.
 - Chưa test trên Firefox/Safari thật — mới rà theo chuẩn web hiện hành, khuyến nghị tự kiểm tra trước khi gửi.
 - Chưa init git / chưa deploy — theo yêu cầu bỏ qua git ở bước này.
 
 ## 9. Bước tiếp theo
 
-1. Tự chọn ảnh hero (Chapter 01) + ảnh cho từng địa điểm (Chapter 02), điền vào `memories.json`.
+1. Đọc `MEDIA_CATALOG.md` mục 6, xác nhận/sửa 6 tên địa điểm ở Chapter 02.
 2. Lướt qua Chapter 03 một lượt, xoá bớt nếu có ảnh không muốn công khai.
-3. Điền tên địa điểm, ngày, lời thư thật vào `memories.json`.
+3. Điền ngày đi, lời thư thật vào `memories.json`.
 4. Thêm nhạc nền (tuỳ chọn).
 5. Chạy local server, kiểm tra trên điện thoại thật.
 6. Khi ok, báo để tiến hành `git init` + push + hướng dẫn bật GitHub Pages.

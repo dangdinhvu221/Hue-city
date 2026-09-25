@@ -46,9 +46,14 @@
     display: none;
   }
 
-  .music-toggle {
+  .music-player {
     left: var(--space-xs);
     bottom: var(--space-xs);
+  }
+
+  .quick-menu-toggle {
+    top: var(--space-xs);
+    right: var(--space-xs);
   }
 }
 

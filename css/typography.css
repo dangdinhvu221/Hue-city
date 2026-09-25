@@ -13,7 +13,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-display);
   font-weight: 500;
   line-height: var(--lh-heading);
-  color: var(--color-text);
+  color: #8c4650;
 }
 
 .eyebrow {

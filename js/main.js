@@ -11,7 +11,12 @@
     renderStaticContent(data);
     renderJourney(data.journey);
     HUE.renderGallery(data.moments);
+    HUE.renderCinematicVideo(data.movingMemories.cinematicVideo);
+    HUE.renderVerticalMemory(data.movingMemories.verticalMemory);
     HUE.renderVideos(data.movingMemories);
+    HUE.initVideoCards();
+    HUE.renderFinalCollage(data.movingMemories.finalCollage);
+    HUE.initLightbox(data.loveNotes && data.loveNotes.lines);
   } else {
     showDataErrorNotice();
   }
@@ -59,6 +64,7 @@ function renderStaticContent(data) {
   setText('#video-eyebrow', data.movingMemories.eyebrow);
   setText('#video-heading', data.movingMemories.heading);
   setText('#video-heading-highlight', data.movingMemories.headingHighlight);
+  setText('#video-intro', data.movingMemories.intro);
 
   setText('#letter-eyebrow', data.letter.eyebrow);
   setText('#letter-heading', data.letter.heading);
@@ -70,14 +76,19 @@ function renderStaticContent(data) {
   setText('#letter-closing', data.letter.closing);
   setText('#letter-signature', data.letter.signature);
 
+  setText('#final-eyebrow', data.toBeContinued.eyebrow);
   setText('#final-heading', data.toBeContinued.heading);
   setText('#final-body', data.toBeContinued.body);
   const finalList = document.getElementById('final-list');
   if (finalList) {
     finalList.innerHTML = data.toBeContinued.list.map((li) => `<li>${escapeHtmlMain(li)}</li>`).join('');
   }
+  setText('#final-message', data.toBeContinued.finalMessage);
   setText('#replay-btn', data.toBeContinued.replayLabel);
   setText('#restart-btn', data.toBeContinued.restartLabel);
+
+  const journeyFootnote = document.getElementById('journey-footnote');
+  if (journeyFootnote && data.journey.footnote) journeyFootnote.textContent = data.journey.footnote;
 }
 
 function renderJourney(journey) {
@@ -129,7 +140,7 @@ function showDataErrorNotice() {
   const notice = document.createElement('div');
   notice.setAttribute('role', 'alert');
   notice.style.cssText = 'position:fixed;bottom:1rem;right:1rem;max-width:320px;background:#262321;color:#F4EFE7;padding:1rem 1.25rem;border-radius:8px;font-size:0.85rem;z-index:200;';
-  notice.textContent = 'Could not load data/memories.json. If you opened this file directly in the browser, run a local server (see README.md) instead.';
+  notice.textContent = 'Không tải được dữ liệu (data/memories.json). Nếu bạn đang mở file trực tiếp trong trình duyệt, hãy chạy qua local server (xem README.md) rồi thử lại.';
   document.body.appendChild(notice);
 }
 

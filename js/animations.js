@@ -16,6 +16,135 @@ HUE.initAnimations = function initAnimations() {
 
   gsap.registerPlugin(ScrollTrigger);
 
+  // Gallery photos and video cards get a choreographed batch-stagger instead
+  // of each triggering independently — reads as a wave rather than a blink.
+  gsap.set('.gallery__item, .video-card', { opacity: 0, y: 40, scale: 0.96 });
+
+  ScrollTrigger.batch('.gallery__item', {
+    start: 'top 92%',
+    interval: 0.08,
+    batchMax: 6,
+    onEnter: (batch) => gsap.to(batch, {
+      opacity: 1, y: 0, scale: 1,
+      duration: 0.9, ease: 'power3.out', stagger: 0.08
+    })
+  });
+
+  ScrollTrigger.batch('.video-card', {
+    start: 'top 92%',
+    interval: 0.08,
+    batchMax: 4,
+    onEnter: (batch) => gsap.to(batch, {
+      opacity: 1, y: 0, scale: 1,
+      duration: 0.9, ease: 'power3.out', stagger: 0.1
+    })
+  });
+
+  // Featured memory collage — main photo rises, the two side photos slide in
+  // from their own direction, then labels and captions settle in after.
+  const collage = document.getElementById('memory-collage');
+  if (collage) {
+    const main = collage.querySelector('.memory-card--1');
+    const upper = collage.querySelector('.memory-card--2');
+    const lower = collage.querySelector('.memory-card--3');
+    const metas = collage.querySelectorAll('.memory-card__index, .memory-card__label');
+    const captions = collage.querySelectorAll('.memory-card__caption');
+
+    gsap.set(metas, { opacity: 0 });
+    gsap.set(captions, { opacity: 0, y: 10 });
+    if (main) gsap.set(main, { opacity: 0, y: 50 });
+    if (upper) gsap.set(upper, { opacity: 0, x: 40, y: -10 });
+    if (lower) gsap.set(lower, { opacity: 0, y: 50 });
+
+    const tl = gsap.timeline({
+      scrollTrigger: { trigger: collage, start: 'top 80%', toggleActions: 'play none none reverse' }
+    });
+    if (main) tl.to(main, { opacity: 1, y: 0, duration: 1, ease: 'power3.out' });
+    if (upper) tl.to(upper, { opacity: 1, x: 0, y: 0, duration: 0.9, ease: 'power3.out' }, '-=0.7');
+    if (lower) tl.to(lower, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' }, '-=0.6');
+    tl.to(metas, { opacity: 1, duration: 0.6, stagger: 0.08 }, '-=0.3');
+    tl.to(captions, { opacity: 0.85, y: 0, duration: 0.6, stagger: 0.08 }, '-=0.3');
+  }
+
+  // Section 02 — cinematic photo rises, meta card follows.
+  const cinematicPhoto = document.getElementById('cinematic-photo');
+  if (cinematicPhoto) {
+    const figure = cinematicPhoto.querySelector('.cinematic-photo__figure');
+    const meta = cinematicPhoto.querySelector('.cinematic-photo__meta');
+    gsap.set(figure, { opacity: 0, y: 40 });
+    gsap.set(meta, { opacity: 0, y: 20 });
+    const tl = gsap.timeline({ scrollTrigger: { trigger: cinematicPhoto, start: 'top 78%', toggleActions: 'play none none reverse' } });
+    tl.to(figure, { opacity: 1, y: 0, duration: 1.1, ease: 'power3.out' });
+    tl.to(meta, { opacity: 1, y: 0, duration: 0.8, ease: 'power3.out' }, '-=0.5');
+  }
+
+  // Section 03 — asymmetrical collage, each frame enters from its own side.
+  const photoCollage = document.getElementById('photo-collage');
+  if (photoCollage) {
+    const meta = photoCollage.querySelector('.photo-collage__meta');
+    const main = photoCollage.querySelector('.photo-collage__frame--main');
+    const vertical = photoCollage.querySelector('.photo-collage__frame--vertical');
+    const night = photoCollage.querySelector('.photo-collage__frame--night');
+    gsap.set(meta, { opacity: 0, y: 15 });
+    gsap.set(main, { opacity: 0, y: 40 });
+    gsap.set(vertical, { opacity: 0, x: 30 });
+    gsap.set(night, { opacity: 0, y: 30 });
+    const tl = gsap.timeline({ scrollTrigger: { trigger: photoCollage, start: 'top 78%', toggleActions: 'play none none reverse' } });
+    tl.to(meta, { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' });
+    tl.to(main, { opacity: 1, y: 0, duration: 1, ease: 'power3.out' }, '-=0.3');
+    tl.to(vertical, { opacity: 1, x: 0, duration: 0.9, ease: 'power3.out' }, '-=0.7');
+    tl.to(night, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out' }, '-=0.6');
+  }
+
+  // Section 04 — film strip slides in horizontally as it enters.
+  const filmStripEl = document.getElementById('film-strip');
+  if (filmStripEl) {
+    const strip = filmStripEl.querySelector('.film-strip');
+    const meta = filmStripEl.querySelector('.film-strip__meta');
+    gsap.set(meta, { opacity: 0, y: 15 });
+    gsap.set(strip, { opacity: 0, x: -50 });
+    const tl = gsap.timeline({ scrollTrigger: { trigger: filmStripEl, start: 'top 80%', toggleActions: 'play none none reverse' } });
+    tl.to(meta, { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' });
+    tl.to(strip, { opacity: 1, x: 0, duration: 1.1, ease: 'power3.out' }, '-=0.3');
+  }
+
+  // Section 05 — cinematic video fades and scales in.
+  const cinematicVideoEl = document.getElementById('cinematic-video');
+  if (cinematicVideoEl) {
+    gsap.set(cinematicVideoEl, { opacity: 0, scale: 0.97 });
+    gsap.to(cinematicVideoEl, {
+      opacity: 1, scale: 1, duration: 1.1, ease: 'power3.out',
+      scrollTrigger: { trigger: cinematicVideoEl, start: 'top 80%', toggleActions: 'play none none reverse' }
+    });
+  }
+
+  // Section 06 — vertical video and photo enter from opposite directions.
+  const verticalMemoryEl = document.getElementById('vertical-memory');
+  if (verticalMemoryEl) {
+    const videoFrame = verticalMemoryEl.querySelector('.vertical-memory__video-frame');
+    const photoFrame = verticalMemoryEl.querySelector('.vertical-memory__photo-frame');
+    const meta = verticalMemoryEl.querySelector('.vertical-memory__meta');
+    gsap.set(videoFrame, { opacity: 0, y: 40 });
+    gsap.set(photoFrame, { opacity: 0, x: 30 });
+    gsap.set(meta, { opacity: 0 });
+    const tl = gsap.timeline({ scrollTrigger: { trigger: verticalMemoryEl, start: 'top 80%', toggleActions: 'play none none reverse' } });
+    tl.to(videoFrame, { opacity: 1, y: 0, duration: 1, ease: 'power3.out' });
+    tl.to(photoFrame, { opacity: 1, x: 0, duration: 0.9, ease: 'power3.out' }, '-=0.6');
+    tl.to(meta, { opacity: 1, duration: 0.6 }, '-=0.3');
+  }
+
+  // Section 07 — final collage, four frames settle in with a gentle stagger.
+  const finalCollageEl = document.getElementById('final-collage');
+  if (finalCollageEl) {
+    const meta = finalCollageEl.querySelector('.final-collage__meta');
+    const frames = finalCollageEl.querySelectorAll('.final-collage__frame');
+    gsap.set(meta, { opacity: 0, y: 15 });
+    gsap.set(frames, { opacity: 0, y: 35 });
+    const tl = gsap.timeline({ scrollTrigger: { trigger: finalCollageEl, start: 'top 80%', toggleActions: 'play none none reverse' } });
+    tl.to(meta, { opacity: 1, y: 0, duration: 0.7, ease: 'power3.out' });
+    tl.to(frames, { opacity: 1, y: 0, duration: 0.9, ease: 'power3.out', stagger: 0.12 }, '-=0.3');
+  }
+
   document.querySelectorAll('[data-reveal]').forEach((el) => {
     gsap.fromTo(el,
       { opacity: 0, y: el.dataset.reveal === 'fade' ? 0 : 40, scale: el.dataset.reveal === 'scale' ? 0.96 : 1 },

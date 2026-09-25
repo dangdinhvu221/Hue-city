@@ -3,12 +3,12 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Hue — A Chapter of Us</title>
-<meta name="description" content="An interactive love story about our journey through Hue." />
+<title>Huế — Một Chương Có Em</title>
+<meta name="description" content="Một câu chuyện tình yêu, kể lại bằng những ngày mình đã cùng đi qua Huế." />
 <meta name="theme-color" content="#F4EFE7" />
 
-<meta property="og:title" content="Hue — A Chapter of Us" />
-<meta property="og:description" content="An interactive love story about our journey through Hue." />
+<meta property="og:title" content="Huế — Một Chương Có Em" />
+<meta property="og:description" content="Một câu chuyện tình yêu, kể lại bằng những ngày mình đã cùng đi qua Huế." />
 <meta property="og:type" content="website" />
 
 <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
@@ -27,11 +27,11 @@
 </head>
 <body>
 
-<a class="skip-link" href="#main-content">Skip to content</a>
+<a class="skip-link" href="#main-content">Bỏ qua, vào nội dung chính</a>
 
 <!-- Loading screen -->
 <div class="loader" id="loader" aria-hidden="true">
-  <span class="loader__mark">HUE</span>
+  <span class="loader__mark">HUẾ</span>
 </div>
 
 <!-- Top progress bar -->
@@ -40,14 +40,32 @@
 </div>
 
 <!-- Chapter navigation -->
-<nav class="chapter-nav" id="chapter-nav" aria-label="Chapter navigation"></nav>
+<nav class="chapter-nav" id="chapter-nav" aria-label="Điều hướng theo chương"></nav>
 
-<!-- Music toggle -->
-<button class="music-toggle" id="music-toggle" data-playing="false" aria-pressed="false" aria-label="Toggle background music">
-  <span class="music-toggle__bars"><span></span><span></span><span></span></span>
-  <span class="music-toggle__text">Music off</span>
+<!-- Quick navigation menu (for jumping without scrolling) -->
+<button class="quick-menu-toggle" id="quick-menu-toggle" aria-label="Mở mục lục" aria-expanded="false">
+  <span></span><span></span><span></span>
 </button>
-<audio id="background-audio" loop preload="none"></audio>
+<div class="quick-menu" id="quick-menu" data-open="false" role="dialog" aria-modal="true" aria-label="Mục lục">
+  <div class="quick-menu__panel">
+    <p class="eyebrow" style="margin-bottom: var(--space-sm);">Đi nhanh đến</p>
+    <ul class="quick-menu__list" id="quick-menu-list"></ul>
+  </div>
+</div>
+
+<!-- Music -->
+<div class="music-player" id="music-player">
+  <div class="music-player__frame" id="music-player-frame" aria-hidden="true">
+    <div id="music-player-target"></div>
+  </div>
+  <div class="music-player__controls">
+    <button class="music-toggle" id="music-toggle" data-playing="false" aria-pressed="false" aria-label="Bật nhạc nền">
+      <span class="music-toggle__bars"><span></span><span></span><span></span></span>
+      <span class="music-toggle__text">Tắt nhạc</span>
+    </button>
+    <button class="music-next" id="music-next" aria-label="Đổi bài hát" hidden>♪</button>
+  </div>
+</div>
 
 <main id="main-content">
 
@@ -66,7 +84,7 @@
   <!-- CHAPTER 01 — BEFORE WE LEFT -->
   <section class="chapter" id="chapter-01">
     <div class="hero-media" id="hero-media">
-      <img id="hero-media-img" alt="Before we left for Hue" loading="eager" />
+      <img id="hero-media-img" alt="Trước ngày mình lên đường đến Huế" loading="eager" />
     </div>
     <div class="hero-content">
       <p class="eyebrow" id="before-eyebrow" data-reveal="fade"></p>
@@ -87,6 +105,7 @@
         <p class="body-lg" id="journey-intro"></p>
       </div>
       <div id="journey-stops"></div>
+      <p class="caption" id="journey-footnote" style="margin-top: var(--space-md);"></p>
     </div>
   </section>
 
@@ -98,6 +117,15 @@
         <h2 class="display-h1" style="margin-block: var(--space-sm);" id="moments-heading"></h2>
         <p class="body-lg" id="moments-intro" style="max-width: 60ch; margin-inline: auto;"></p>
       </div>
+      <div class="memory-collage" id="memory-collage"></div>
+
+      <div class="cinematic-photo" id="cinematic-photo"></div>
+
+      <div class="photo-collage" id="photo-collage"></div>
+
+      <div class="film-strip-section" id="film-strip"></div>
+
+      <p class="caption" style="text-align:center; margin-top: var(--space-xl); margin-bottom: var(--space-md); letter-spacing: var(--ls-wide); text-transform: uppercase;">Và còn rất nhiều khoảnh khắc khác</p>
       <div class="gallery" id="gallery-grid"></div>
     </div>
   </section>
@@ -111,8 +139,17 @@
           <span id="video-heading"></span><br />
           <em id="video-heading-highlight" style="font-style: italic; color: var(--color-gold-light);"></em>
         </h2>
+        <p class="body-lg" id="video-intro" style="max-width: 55ch; margin-inline: auto;"></p>
       </div>
+
+      <div class="cinematic-video-section" id="cinematic-video"></div>
+
+      <div class="vertical-memory-section" id="vertical-memory"></div>
+
+      <p class="caption" style="text-align:center; margin-top: var(--space-xl); margin-bottom: var(--space-md); letter-spacing: var(--ls-wide); text-transform: uppercase;">Và còn rất nhiều thước phim khác</p>
       <div class="video-grid" id="video-grid"></div>
+
+      <div class="final-collage-section" id="final-collage"></div>
     </div>
   </section>
 
@@ -132,9 +169,11 @@
   <!-- CHAPTER 06 — TO BE CONTINUED -->
   <section class="chapter chapter--full" id="chapter-06">
     <div class="container">
+      <p class="eyebrow" id="final-eyebrow" data-reveal="fade" style="display:block; margin-bottom: var(--space-sm);"></p>
       <h2 class="display-h1" id="final-heading" data-reveal="fade"></h2>
       <p class="body-lg" id="final-body" style="margin-top: var(--space-sm);" data-reveal="fade"></p>
       <ul class="body-lg" id="final-list" style="margin-top: var(--space-sm); list-style: none;" data-reveal="fade"></ul>
+      <p class="body-lg" id="final-message" style="margin-top: var(--space-lg); color: var(--color-gold-light); font-style: italic;" data-reveal="fade"></p>
       <div class="final-actions" data-reveal="fade">
         <button class="btn" id="replay-btn"></button>
         <button class="btn" id="restart-btn"></button>
@@ -145,23 +184,24 @@
 </main>
 
 <!-- Lightbox -->
-<div class="lightbox" id="lightbox" data-open="false" role="dialog" aria-modal="true" aria-label="Photo viewer">
-  <button class="lightbox__close" aria-label="Close photo viewer">✕</button>
-  <button class="lightbox__prev" aria-label="Previous photo">‹</button>
+<div class="lightbox" id="lightbox" data-open="false" role="dialog" aria-modal="true" aria-label="Xem ảnh">
+  <span class="lightbox__counter" id="lightbox-counter"></span>
+  <button class="lightbox__close" aria-label="Đóng">✕</button>
+  <button class="lightbox__prev" aria-label="Ảnh trước">‹</button>
   <figure class="lightbox__figure">
     <img class="lightbox__image" src="" alt="" />
     <figcaption class="lightbox__caption"></figcaption>
   </figure>
-  <button class="lightbox__next" aria-label="Next photo">›</button>
+  <button class="lightbox__next" aria-label="Ảnh sau">›</button>
 </div>
+
 
 <script src="data/config.js" defer></script>
 <script src="js/data.js" defer></script>
 <script src="js/gallery.js" defer></script>
 <script src="js/video.js" defer></script>
 <script src="js/music.js" defer></script>
-<script src="js/navigation.js" defer></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+<script src="js/navigation.js" defer></script><script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" defer></script>
 <script src="js/animations.js" defer></script>
 <script src="js/main.js" defer></script>

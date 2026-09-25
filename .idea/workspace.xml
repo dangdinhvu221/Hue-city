@@ -4,7 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f101e041-6fc3-4d14-9a7a-22531113fd87" name="Changes" comment="" />
+    <list default="true" id="f101e041-6fc3-4d14-9a7a-22531113fd87" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moments/2aobor0v1xwo2eefz6pc6lqkahqw04jxvfhiea1a8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/moments/2aobor0v1xwo2eefz6pc6lqkahqw04jxvfhiea1a8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moments/2aobor0v3zaim9mngvi8xj4w8c4la2yvrs8ukssu249.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/moments/2aobor0v3zaim9mngvi8xj4w8c4la2yvrs8ukssu249.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moments/2aobor0v4bf4jknchmmvoscjy5pfuh26ivm44fa4313.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/moments/2aobor0v4bf4jknchmmvoscjy5pfuh26ivm44fa4313.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moments/2aobor0v4chg3wpobuj2ptq3cna1gzzhust5zwpc308.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/moments/2aobor0v4chg3wpobuj2ptq3cna1gzzhust5zwpc308.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moments/2aobor0v4se9p5jxurxdwzm6gfguziu9dji7tnjs329.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/moments/2aobor0v4se9p5jxurxdwzm6gfguziu9dji7tnjs329.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moments/2aobor0v4seoq0xow6mmb1youht65ps10mrryybc328.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/moments/2aobor0v4seoq0xow6mmb1youht65ps10mrryybc328.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/moments/2aobor0v4y0ska4bthtbthxdxqs2op25vy39cywu323.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/images/moments/2aobor0v4y0ska4bthtbthxdxqs2op25vy39cywu323.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/chapters.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/chapters.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/components.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/components.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/responsive.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/typography.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/typography.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/config.js" beforeDir="false" afterPath="$PROJECT_DIR$/data/config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/memories.json" beforeDir="false" afterPath="$PROJECT_DIR$/data/memories.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/animations.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/animations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/gallery.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/gallery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/music.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/music.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/navigation.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/navigation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/video.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/video.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +36,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "dangdinhvu221"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dangdinhvu221/Hue-city.git",
+    "accountId": "192ea467-c9c9-412c-a650-630c59290e90"
+  }
+}]]></component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 7
 }]]></component>
@@ -23,9 +58,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/love/Hue-city",
@@ -52,7 +90,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1790263943869</updated>
-      <workItem from="1790263945003" duration="4373000" />
+      <workItem from="1790263945003" duration="13593000" />
     </task>
     <servers />
   </component>
